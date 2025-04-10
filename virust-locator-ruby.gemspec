@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
 
   spec.summary = "Wrapper for viRust-locator, a Rust API for simplied LANL HIV Locator tool."
   spec.description = "Wrapper for viRust-locator, a Rust API for simplied LANL HIV Locator tool."
-  spec.homepage = "TODO: Put your gem's website or public repo URL here."
+  spec.homepage = "https://github.com/ViralSeq/virust-locator-ruby"
   spec.license = "MIT"
   spec.required_ruby_version = ">= 3.1.0"
 
