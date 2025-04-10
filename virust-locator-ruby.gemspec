@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.email = ["shunta.zhou@gmail.com"]
 
   spec.summary = "Wrapper for viRust-locator, a Rust API for simplied LANL HIV Locator tool."
-  spec.description = "Wrapper for viRust-locator, a Rust API for simplied LANL HIV Locator tool."
+  spec.description = "virust-locator provides API for HIV/SIV sequence locating, as in the LANL HIV tools. This is the Ruby wrapper for the virust-locator cmd tool." # rubocop:disable Layout/LineLength
   spec.homepage = "https://github.com/ViralSeq/virust-locator-ruby"
   spec.license = "MIT"
   spec.required_ruby_version = ">= 3.1.0"
