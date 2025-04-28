@@ -16,10 +16,10 @@ gem install virust-locator-ruby
 
 ## Usage
 
+```ruby
 require 'virust_locator'
-
 VirustLocator::Locator.exec("GAAAGCATAGTAATATGGGGAAAGACTCCTAAA")
-
+```
 =>
 
 "3681\t3713\t100\tfalse\tGAAAGCATAGTAATATGGGGAAAGACTCCTAAA\tGAAAGCATAGTAATATGGGGAAAGACTCCTAAA"
