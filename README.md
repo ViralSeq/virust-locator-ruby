@@ -16,6 +16,8 @@ gem install virust-locator-ruby
 
 ## Usage
 
+require 'virust_locator'
+
 VirustLocator::Locator.exec("GAAAGCATAGTAATATGGGGAAAGACTCCTAAA")
 
 =>
