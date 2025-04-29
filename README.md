@@ -20,6 +20,7 @@ gem install virust-locator-ruby
 require 'virust_locator'
 VirustLocator::Locator.exec("GAAAGCATAGTAATATGGGGAAAGACTCCTAAA")
 ```
+
 =>
 
 "3681\t3713\t100\tfalse\tGAAAGCATAGTAATATGGGGAAAGACTCCTAAA\tGAAAGCATAGTAATATGGGGAAAGACTCCTAAA"
@@ -41,6 +42,10 @@ Options:
 -h, --help Print help
 
 -V, --version Print version
+
+## Issues
+
+1. Currently 12 times slower than the Rust binary after exec from the Ruby gem.
 
 ## Contributing
 
