@@ -43,9 +43,13 @@ Options:
 
 -V, --version Print version
 
-## Issues
+## Change Log
 
-1. Currently 12 times slower than the Rust binary after exec from the Ruby gem.
+### v0.2.0
+
+1. Fixed a bug for showing the aligned sequences.
+
+2. Fixed a bug that slowed down the performance.
 
 ## Contributing
 
