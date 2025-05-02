@@ -3,5 +3,5 @@
 
 module VirustLocator
   # The version of the virust-locator-ruby gem.
-  VERSION = "0.2.0"
+  VERSION = "0.3.0"
 end

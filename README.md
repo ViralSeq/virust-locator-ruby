@@ -45,6 +45,12 @@ Options:
 
 ## Change Log
 
+### v0.3.0
+
+1. Fixed a bug for displaying the aligned sequences.
+
+2. Now allow multiple sequences to be run at one time. When running multiple sequences in one query (seperate each with [whitespace]), return object is the locator results one line per query.
+
 ### v0.2.0
 
 1. Fixed a bug for showing the aligned sequences.

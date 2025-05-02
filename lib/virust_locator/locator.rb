@@ -10,7 +10,7 @@ module VirustLocator
   #   Locator.exec("GAAAGCATAGTAATATGGGGAAAGACTCCTAAA")
   #   => "3681\t3713\t100\tfalse\tGAAAGCATAGTAATATGGGGAAAGACTCCTAAA\tGAAAGCATAGTAATATGGGGAAAGACTCCTAAA"
   module Locator
-    def self.exec(query, type = "nt", algorithm = "1", ref = "HXB2") # rubocop:disable Metrics/MethodLength
+    def self.init # rubocop:disable Metrics/MethodLength
       file = case RUBY_PLATFORM
              when /arm64-darwin/
                "virust-locator-aarch64-apple-darwin"
@@ -25,12 +25,15 @@ module VirustLocator
              else
                raise "Unsupported platform: #{RUBY_PLATFORM}"
              end
-
       file = File.join(File.dirname(__FILE__), "runnable", file)
-      safe_file = Shellwords.escape(file)
       raise "Excecutable file not found: #{file}" unless File.exist?(file)
 
-      `#{safe_file} -q #{Shellwords.escape(query)} -t #{Shellwords.escape(type)} -a #{Shellwords.escape(algorithm)} -r #{Shellwords.escape(ref)}`.strip # rubocop:disable Layout/LineLength
+      Shellwords.escape(file)
+    end
+
+    def self.exec(query, type = "nt", algorithm = "1", ref = "HXB2")
+      safe_file = init
+      `#{safe_file} -q #{query} -t #{type} -a #{algorithm} -r #{ref}`.strip
     end
   end
 end
